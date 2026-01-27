@@ -1,4 +1,4 @@
-## Demo : https://cymbal-shops.retail.cymbal.dev/product/0PUK6V6EV0
+## Demo : https://cymbal-shops.retail.cymbal.dev/
 
 ## Architecture
 
