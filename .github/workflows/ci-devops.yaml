@@ -30,11 +30,11 @@ jobs:
         with:
           context: src/frontend
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/frontend:${{ github.sha }}
+          tags: ghcr.io/abdel410/frontend:${{ github.sha }}
 
       - name: Update kubernetes manifest
         run: |
-          sed -i "s|image: .*frontend.*|image: ghcr.io/${{ github.repository_owner }}/frontend:${{ github.sha }}|g" release/kubernetes-manifests.yaml
+          sed -i "s|image: .*frontend.*|image: ghcr.io/abdel410/frontend:${{ github.sha }}|g" release/kubernetes-manifests.yaml
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add release/kubernetes-manifests.yaml
